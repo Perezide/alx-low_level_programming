@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /*
 * main - fibonacci <3
 * Purpose - no hardcode
-* Return:  (Success)
+* Return: 0  (Success)
 */
-
 int main(void)
 {
 
@@ -46,10 +44,12 @@ int main(void)
 		printf("%lu", aft2 % l);
 		aft1 = aft1 + bef1;
 		bef1 = aft1 - bef1;
+	}
+	for (i = 92; i < 99; ++i)
+	{
 		aft2 = aft2 + bef2;
 		bef2 = aft2 - bef2;
 	}
 	printf("\n");
 	return (0);
-
 }
