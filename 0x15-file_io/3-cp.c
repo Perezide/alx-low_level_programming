@@ -51,7 +51,7 @@ void close_file(int num)
  *
  * Return: 0 on success.
  *
- * Description: 
+ * Description:
  * argument count is incorrect - exit code 97.
  * file_from does not exist or cannot be read - exit code 98.
  * file_to cannot be created or written to - exit code 99.
