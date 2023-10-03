@@ -6,7 +6,7 @@
  * @text_content: A pointer to a string to write to the file.
  *
  * Return: -1 if it fails.
- *         Otherwise - 1.
+ * Otherwise - 1.
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	num = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(fd, text_content, len);
+	w = write(num, text_content, len);
 
 	if (num == -1 || w == -1)
 		return (-1);
